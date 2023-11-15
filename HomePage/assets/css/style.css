@@ -1,0 +1,594 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  background-color: #07121f;
+}
+
+#header {
+  width: 1519px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.header__navbar {
+  width: 1520px;
+  height: 80px;
+  position: fixed;
+  background-color: #3b156c;
+  z-index: 1;
+}
+
+.header__navbar-item-logo {
+  width: 130px;
+  height: 60px;
+  margin-top: 5px;
+}
+
+.header__navbar-list {
+  display: flex;
+  list-style: none;
+}
+
+.header__navbar-item {
+  line-height: 80px;
+  margin: 0 10px;
+}
+
+.header__navbar-item a {
+  text-decoration: none;
+  color: white;
+}
+
+.header__navbar-item a:hover {
+  color: #b1a21e;
+}
+
+.header__navbar-name {
+  display: flex;
+  color: white;
+  line-height: 80px;
+  font-size: 16px;
+  padding-left: 750px;
+}
+
+.header__navbar-name:hover {
+  color: #b1a21e;
+}
+
+.header__navbar-name-icon {
+  color: #428bca;
+  font-weight: 600;
+  margin-left: 10px;
+  font-size: 20px;
+  line-height: 80px;
+}
+
+/* Body */
+#body {
+  width: 1368px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.body__choose-movie {
+  display: block;
+  width: 1368px;
+  height: 98px;
+  background-color: #091d2c;
+  margin-top: 50px;
+  border-radius: 5px;
+}
+
+.body__choose-movie-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 18px;
+  position: relative;
+}
+
+.body__choose-movie-item {
+  margin-top: 14px;
+}
+
+.body__choose-movie-item-title {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.body__choose-movie-sub-menu {
+  position: relative;
+  width: 180px;
+  height: 40px;
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.body__choose-movie-sub-menu-select {
+  display: flex;
+  margin: 0 5px;
+  font-size: 14px;
+}
+
+.body__choose-movie-sub-menu-select-icon {
+  color: #428bca;
+  font-size: 16px;
+  padding-left: 100px;
+}
+
+/* Select Option */
+
+/* Phần này bị lỗi */
+.body__choose-movie-sub-menu:hover ~ .body__choose-movie-select {
+  display: block;
+}
+
+.body__choose-movie-sub-menu-select-icon:hover {
+  color: #b1a21e;
+}
+
+/* Về fix phần focus */
+.body__choose-movie-select {
+  position: absolute;
+  top: 101%;
+  left: 0;
+  width: 180px;
+  background-color: white;
+  border-radius: 8px;
+  display: none;
+}
+
+.body__choose-movie-select::before {
+  position: absolute;
+  content: "";
+  border: 10px solid;
+  border-color: transparent transparent transparent transparent;
+  width: 89%;
+  top: -17px;
+  display: block;
+}
+
+.body__choose-movie-select-heading {
+  padding: 8px 4px;
+  font-size: 14px;
+  color: black;
+  opacity: 0.8;
+}
+
+.body__choose-movie-select-heading:hover {
+  background-color: #114189;
+  cursor: pointer;
+  color: white;
+}
+
+.body__choose-movie-select-list {
+  list-style: none;
+}
+
+.body__choose-movie-select-item {
+  padding: 8px 4px;
+}
+
+.body__choose-movie-select-item:last-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.body__choose-movie-select-item:hover {
+  background-color: #114189;
+  cursor: pointer;
+  color: white;
+}
+
+.body__choose-movie-select-item a {
+  text-decoration: none;
+  font-size: 14px;
+  color: black;
+  letter-spacing: 0.5px;
+}
+
+.body__choose-movie-sub-menu-grid {
+  margin-top: 8px;
+}
+
+.body__choose-movie-sub-menu-grid-icon1 {
+  font-size: 30px;
+  color: white;
+}
+
+.body__choose-movie-sub-menu-grid-icon2 {
+  font-size: 30px;
+  color: #7a7b7b;
+}
+
+/* Body Movie Section */
+.body__movie-section {
+  font-size: 16px;
+  color: #b1a21e;
+  margin-top: 20px;
+}
+
+.body__movie-section-line {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #1b3d5c;
+  margin-top: 5px;
+}
+
+/* List phim 1 */
+
+.body__movie-list1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.body__movie-poster1 {
+  margin-top: 10px;
+}
+
+.body__movie-picture1 {
+  width: 256px;
+  height: 384px;
+  cursor: pointer;
+}
+
+.body__movie-poster-label1 h3 {
+  color: white;
+  font-size: 16px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.body__movie-poster-label1 p {
+  color: #677b7b;
+  font-size: 16px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+/* Phim lẻ */
+.body__movie-section-phimle {
+  display: flex;
+  justify-content: space-between;
+  color: #b1a21e;
+  margin-top: 40px;
+}
+
+.body__movie-section-phimle p {
+  color: white;
+  cursor: pointer;
+}
+
+.body__movie-list2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* List phim 2 */
+
+.body__movie-poster2 {
+  margin-top: 10px;
+}
+
+.body__movie-picture2 {
+  width: 256px;
+  height: 384px;
+  cursor: pointer;
+}
+
+.body__movie-poster-label2 h3 {
+  color: white;
+  font-size: 16px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.body__movie-poster-label2 p {
+  color: #677b7b;
+  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+/* List phim 3 */
+
+.body__movie-list3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.body__movie-poster3 {
+  margin-top: 10px;
+}
+
+.body__movie-picture3 {
+  width: 256px;
+  height: 384px;
+  cursor: pointer;
+}
+
+.body__movie-poster-label3 h3 {
+  color: white;
+  font-size: 16px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.body__movie-poster-label3 p {
+  color: #677b7b;
+  font-size: 16px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+/* Phim bộ */
+.body__movie-section-phimbo {
+  display: flex;
+  justify-content: space-between;
+  color: #b1a21e;
+  margin-top: 40px;
+}
+
+.body__movie-section-phimbo p {
+  color: white;
+  cursor: pointer;
+}
+
+/* List phim 4 */
+
+.body__movie-list4 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.body__movie-poster4 {
+  margin-top: 10px;
+}
+
+.body__movie-picture4 {
+  width: 256px;
+  height: 384px;
+  cursor: pointer;
+}
+
+.body__movie-poster-label4 h3 {
+  color: white;
+  font-size: 16px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.body__movie-poster-label4 p {
+  color: #677b7b;
+  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+/* List phim 5 */
+
+.body__movie-list5 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.body__movie-poster5 {
+  margin-top: 10px;
+}
+
+.body__movie-picture5 {
+  width: 256px;
+  height: 384px;
+  cursor: pointer;
+}
+
+.body__movie-poster-label5 h3 {
+  color: white;
+  font-size: 16px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.body__movie-poster-label5 p {
+  color: #677b7b;
+  font-size: 16px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+/* Phim chờ xử lý */
+.body__movie-progress {
+  margin-top: 60px;
+}
+
+.body__movie-progress h3 {
+  color: #b3b3b3;
+  font-size: 20px;
+}
+
+.body__movie-progress-movies {
+  margin-top: 16px;
+  display: flex;
+  line-height: 8px;
+}
+
+.body__movie-progress-movies a {
+  text-decoration: none;
+  color: #114189;
+  margin: 0 1px;
+}
+
+.body__movie-progress-movies a:hover {
+  text-decoration: none;
+  color: white;
+  margin: 0 1px;
+}
+
+.body__movie-progress-movies-year {
+  color: #7a7a7a;
+  margin-left: 4px;
+}
+
+.body__movie-progress-all {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 12px;
+}
+
+.body__movie-progress-all-icon {
+  color: #b3b3b3;
+  font-size: 12px;
+  line-height: 19px;
+}
+
+.body__movie-progress-all p {
+  color: #114189;
+  line-height: 19px;
+  margin-left: 4px;
+}
+
+.body__movie-progress-all:hover p {
+  color: white;
+  line-height: 19px;
+  margin-left: 4px;
+  cursor: pointer;
+}
+
+/* Footer */
+#footer {
+  width: 1519px;
+  height: 450px;
+  margin: 0 auto;
+  background: url(https://phimbro.com/static/skin/footer-bg.jpg);
+}
+
+/* .footer-poster {
+}
+
+.footer-poster img {
+  width: 1520px;
+  height: 500px;
+  left: 0;
+  margin-top: 60px;
+} */
+
+.footer-introduction {
+  width: 1368px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 60px;
+  padding-top: 60px;
+}
+
+.footer-introduction span {
+  color: #2571c4;
+}
+
+.footer-introduction span:hover {
+  color: #b1a21e;
+  cursor: pointer;
+}
+
+.footer-introduction h3 {
+  color: white;
+  font-size: 16px;
+}
+
+.footer-introduction__list {
+  margin-top: 24px;
+  list-style: circle;
+  margin-left: 24px;
+}
+
+.footer-introduction__item {
+  color: #b1b4b5;
+  line-height: 24px;
+}
+
+.footer-introduction__social {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 80px;
+}
+
+.footer-introduction__media1 {
+  color: white;
+  font-size: 25px;
+  width: 48px;
+  height: 48px;
+  background-color: #061234;
+  border: 1px solid #7a7a7a;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 14px;
+  margin-top: 24px;
+}
+
+.footer-introduction__media1:hover {
+  background-color: #ea4335;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px 1px #fff;
+}
+
+.footer-introduction__media2 {
+  color: white;
+  font-size: 25px;
+  width: 48px;
+  height: 48px;
+  background-color: #061234;
+  border: 1px solid #7a7a7a;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 14px;
+  margin-top: 24px;
+}
+
+.footer-introduction__media2:hover {
+  background-color: #4267b2;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px 1px #fff;
+}
+
+.footer-introduction__media3 {
+  color: white;
+  font-size: 25px;
+  width: 48px;
+  height: 48px;
+  background-color: #061234;
+  border: 1px solid #7a7a7a;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 14px;
+  margin-top: 24px;
+}
+
+.footer-introduction__media3:hover {
+  background-color: #229ed9;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px 1px #fff;
+}
+
+/* .footer-introduction__media:hover {
+  background-color: #2f0a61;
+  cursor: pointer;
+} */

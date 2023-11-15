@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6F42IVln_qTBTrFXhbgcX7nv2R5_vnlmVPgLBvYy8rgTIAeHGwH9AJyERmkTfPoZZkJU&usqp=CAU"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400&family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Red+Hat+Display:wght@300;400;500&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <title>ChiTietPhim Phimbro</title>
+  </head>
+  <body>
+    <div id="main">
+      <!-- Header -->
+
+      <div class="body-poster__large"></div>
+      <div id="header">
+        <div class="header__navbar">
+          <ul class="header__navbar-list">
+            <li class="header__navbar-item">
+              <a href="http://127.0.0.1:5501/HomePage/index.html">
+                <img
+                  src="./assets/css/img/z4349514105704_103fdccde1d1bdddc5199562898f3a1a-removebg-preview.png"
+                  alt=""
+                  class="header__navbar-item-logo"
+                  onclick="dieu_huong_trangchu()"
+                />
+              </a>
+            </li>
+            <li class="header__navbar-item" onclick="dieu_huong_timkiem()">
+              <a href="http://127.0.0.1:5501/TimKiem/index.html">
+                <i class="bi bi-search"></i>
+                Tìm kiếm
+              </a>
+            </li>
+            <li class="header__navbar-item" onclick="dieu_huong_phimhot()">
+              <a href="http://127.0.0.1:5501/PhimHot/index.html">Phim Hot</a>
+            </li>
+            <li class="header__navbar-item" onclick="dieu_huong_phimle()">
+              <a href="http://127.0.0.1:5501/PhimLe/index.html">Phim Lẻ</a>
+            </li>
+            <li class="header__navbar-item" onclick="dieu_huong_phimbo()">
+              <a href="http://127.0.0.1:5501/PhimBo/index.html">Phim Bộ</a>
+            </li>
+            <li class="header__navbar-item" onclick="dieu_huong_phimmoi()">
+              <a href="http://127.0.0.1:5501/PhimMoi/index.html">Phim Mới</a>
+            </li>
+            <li class="header__navbar-item" onclick="dieu_huong_FAQ()">
+              <a href="http://127.0.0.1:5501/FAQ/index.html">FAQ</a>
+            </li>
+            <div class="header__navbar-name" onclick="dieu_huong_taikhoan()">
+              <p>Huy Hoàng</p>
+              <i class="header__navbar-name-icon bi bi-chevron-down"></i>
+            </div>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Body -->
+      <div id="body">
+        <div class="body-movie__details">
+          <div class="body-movie__poster-medium">
+            <img
+              src="./assets/css/img/qNBAXBIQlnOThrVvA6mA2B5ggV6.jpg"
+              alt=""
+            />
+
+            <div
+              class="body-movie__poster-btn"
+              onclick="dieu_huong_videoplayer()"
+            >
+              <i class="body-movie__poster-btn-icon bi bi-play-fill"></i>
+              <p>Xem phim</p>
+            </div>
+          </div>
+
+          <div class="body-movie__poster-title">
+            <h1>The Super Mario Bros. Movie</h1>
+            <p class="body-movie__poster-title-des">
+              Phim anh em Super Mario <span>(2023)</span>
+            </p>
+
+            <div class="body-movie__poster-time">
+              <p class="body-movie__poster-time-des">1 giờ 32 phút</p>
+              <img
+                src="./assets/css/img/199-1996370_bohemian-rhapsody-this-movie-is-rated-pg-logo.png"
+                alt=""
+              />
+            </div>
+
+            <div class="body-movie__poster-imdb">
+              <img src="./assets/css/img/imdb-removebg-preview.png" alt="" />
+              <p class="body-movie__poster-imdb-des">7.3</p>
+            </div>
+
+            <div class="body-movie__poster-social">
+              <div class="body__poster-media">
+                <div class="body__poster-media-face">
+                  <i class="body__poster-media-face-icon bi bi-facebook"></i>
+                  <p>Chia sẻ</p>
+                </div>
+
+                <div class="body__poster-media-album">
+                  <i class="body__poster-media-album-icon bi bi-plus-lg"></i>
+                  <p>Bộ sưu tập</p>
+                </div>
+              </div>
+
+              <div class="body__poster-category">
+                <div class="body__postert-category-item">Hài</div>
+                <div class="body__postert-category-item">Hoạt hình</div>
+                <div class="body__postert-category-item">Phiêu lưu</div>
+                <div class="body__postert-category-item">Gia đình</div>
+                <div class="body__postert-category-item">Kỳ ảo</div>
+              </div>
+            </div>
+
+            <div class="body-movie__des">
+              <div class="body-movie-actor">
+                <h3>ĐẠO DIỄN</h3>
+                <p>Aaron Horvath, Michael Jelenic</p>
+              </div>
+              <div class="body-movie-script">
+                <h3>KỊCH BẢN</h3>
+                <p>Matt Fogel</p>
+              </div>
+              <div class="body-movie-country">
+                <h3>QUỐC GIA</h3>
+                <p>Nhật Bản, Mỹ</p>
+              </div>
+              <div class="body-movie-premiere">
+                <h3>KHỞI CHIẾU</h3>
+                <p>5/4/2023</p>
+              </div>
+            </div>
+
+            <div class="body-movie-sub-des">
+              <p>
+                The Super Mario Bros. Movie xoay quanh cuộc phiêu lưu ở thế giới
+                Vương quốc Nấm của anh em thợ sửa ống nước Mario và Luigi. Sau
+                khi tình cờ bước tới vùng đất lạ từ một ống nước, Luigi đã bị
+                chia tách với Mario và rơi vào tay quái vật rùa xấu xa Bowser,
+                hắn đang âm mưu độc chiếm thế giới. Trong lúc cố gắng tìm kiếm
+                người anh em của mình, Mario đã chạm mặt anh bạn nấm Toad và
+                công chúa Peach. Từ đây họ sát cánh bên nhau trên hành trình
+                ngăn chặn thế lực hắc ám.
+              </p>
+            </div>
+
+            <div class="body-movie-introduction">
+              <div class="body-movie-introduction-title">
+                <h3>DIỄN VIÊN</h3>
+
+                <div class="body-movie-introduction-title-icon">
+                  <i
+                    class="body-movie-introduction-title-icon-left bi bi-chevron-left"
+                  ></i>
+                  <i
+                    class="body-movie-introduction-title-icon-right bi bi-chevron-right"
+                  ></i>
+                </div>
+              </div>
+
+              <div class="body-movie-introduction-avatar">
+                <div class="body-movie-introduction-profile">
+                  <img
+                    src="./assets/css/img/a56s3RxYTVXoS9csmaB5Zm5b4Xq.jpg"
+                    alt=""
+                    class="body-movie-introduction-avatar-picture"
+                  />
+                  <h4>Chris Patt</h4>
+                  <p>Mario (voice)</p>
+                </div>
+
+                <div class="body-movie-introduction-profile">
+                  <img
+                    src="./assets/css/img/c0HNhjChGybnHa4eoLyqO4dDu1j.jpg"
+                    alt=""
+                    class="body-movie-introduction-avatar-picture"
+                  />
+                  <h4>Charlie Day</h4>
+                  <p>Luigi (voice)</p>
+                </div>
+
+                <div class="body-movie-introduction-profile">
+                  <img
+                    src="./assets/css/img/jxAbDJWvz4p1hoFpJYG5vY2dQmq.jpg"
+                    alt=""
+                    class="body-movie-introduction-avatar-picture"
+                  />
+                  <h4>Ana Taylor-Joy</h4>
+                  <p>Princess Peach (voice)</p>
+                </div>
+
+                <div class="body-movie-introduction-profile">
+                  <img
+                    src="./assets/css/img/rtCx0fiYxJVhzXXdwZE2XRTfIKE.jpg"
+                    alt=""
+                    class="body-movie-introduction-avatar-picture"
+                  />
+                  <h4>Jack Black</h4>
+                  <p>Bowser (voice)</p>
+                </div>
+
+                <div class="body-movie-introduction-profile">
+                  <img
+                    src="./assets/css/img/vAR5gVXRG2Cl6WskXT99wgkAoH8.jpg"
+                    alt=""
+                    class="body-movie-introduction-avatar-picture"
+                  />
+                  <h4>Keegan-Michael Key</h4>
+                  <p>Toad (voice)</p>
+                </div>
+
+                <div class="body-movie-introduction-profile">
+                  <img
+                    src="./assets/css/img/2dPFskUtoiG0xafsSEGl9Oz4teA.jpg"
+                    alt=""
+                    class="body-movie-introduction-avatar-picture"
+                  />
+                  <h4>Seth Rogen</h4>
+                  <p>Dokey Kong (voice)</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="body-movie-trailer">
+              <div class="body-movie-trailer-title">
+                <h3>TRAILER</h3>
+              </div>
+
+              <div class="body-movie-trailer-film">
+                <div class="body-movie-trailer-film-item">
+                  <video
+                    controls
+                    src="./assets/css/video/Bowser - Peaches (Official Music Video) - The Super Mario Bros. Movie.mp4"
+                  ></video>
+                </div>
+
+                <div class="body-movie-trailer-film-item">
+                  <video
+                    controls
+                    src="./assets/css/video/Super Mario Bros. Plumbing Commercial.mp4"
+                  ></video>
+                </div>
+
+                <div class="body-movie-trailer-film-item">
+                  <video
+                    controls
+                    src="./assets/css/video/The Super Mario Bros. Movie - Official Trailer.mp4"
+                  ></video>
+                </div>
+
+                <div class="body-movie-trailer-film-item">
+                  <video
+                    controls
+                    src="./assets/css/video/The Super Mario Bros. Movie - “Mushroom Kingdom” - Official Movie Clip.mp4"
+                  ></video>
+                </div>
+              </div>
+            </div>
+
+            <div class="body-movie-similar">
+              <div class="body-movie-title">
+                <h3>PHIM TƯƠNG TỰ</h3>
+              </div>
+
+              <div class="body-movie-film">
+                <div class="body-movie-film-poster">
+                  <img
+                    src="https://image.tmdb.org/t/p/w342/fTUCwsxVoLFuodAtlL6aITP1B45.jpg"
+                    alt=""
+                  />
+                  <p>Eroctic Ghost Story</p>
+                </div>
+
+                <div class="body-movie-film-poster">
+                  <img
+                    src="https://image.tmdb.org/t/p/w342/dEEXkhekQd7W1S9gZ9EawXNkaEF.jpg"
+                    alt=""
+                  />
+                  <p>The Accursed</p>
+                </div>
+
+                <div class="body-movie-film-poster">
+                  <img
+                    src="https://image.tmdb.org/t/p/w342/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg"
+                    alt=""
+                  />
+                  <p>Avatar: The Way of Water</p>
+                </div>
+
+                <div class="body-movie-film-poster">
+                  <img
+                    src="https://image.tmdb.org/t/p/w342/2lUYbD2C3XSuwqMUbDVDQuz9mqz.jpg"
+                    alt=""
+                  />
+                  <p>The Devil Conspiracy</p>
+                </div>
+
+                <div class="body-movie-film-poster">
+                  <img
+                    src="https://image.tmdb.org/t/p/w342/ewF3IlGscc7FjgGEPcQvZsAsgAW.jpg"
+                    alt=""
+                  />
+                  <p>Winnie the Pooh: Blood and <br />Honey<br /></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div id="footer">
+        <div class="footer-introduction">
+          <h3>
+            Phim chất lượng cao online của <span>XemPhim</span> khác gì so với
+            các trang phim khác?
+          </h3>
+          <ul class="footer-introduction__list">
+            <li class="footer-introduction__item">
+              Là phim bluray (reencoded), có độ phân giải thấp nhất là Full HD
+              (1080p), trong khi hầu hết các trang phim khác chỉ có tới độ phân
+              giải HD (720p) là cao nhất
+            </li>
+            <li class="footer-introduction__item">
+              Chất lượng cao, lượng dữ liệu trên giây (bitrate) gấp từ 5 - 10
+              lần phim online thông thường - đây là yếu tố quyết định độ nét của
+              phim (thậm chí còn quan trọng hơn độ phân giải)
+            </li>
+            <li class="footer-introduction__item">
+              Âm thanh 5.1 (6 channel) thay vì stereo (2 channel) như các trang
+              phim khác (kể cả Youtube)
+            </li>
+            <li class="footer-introduction__item">
+              Phù hợp để xem trên màn hình TV, máy tính, laptop có độ phân giải
+              cao
+            </li>
+            <li class="footer-introduction__item">
+              Nếu không hài lòng với phụ đề có sẵn, bạn có thể tự upload phụ đề
+              của riêng mình để xem online
+            </li>
+            <li class="footer-introduction__item">
+              Có lựa chọn hiện phụ đề song ngữ (tức hiện đồng thời cả tiếng Anh
+              & tiếng Việt), phù hợp với những người muốn học tiếng Anh qua phụ
+              đề phim
+            </li>
+          </ul>
+
+          <div class="footer-introduction__social">
+            <div class="footer-introduction__media1">
+              <i class="footer-introduction__social-icon1 bi bi-envelope"></i>
+            </div>
+            <div class="footer-introduction__media2">
+              <i class="footer-introduction__social-icon2 bi bi-facebook"></i>
+            </div>
+            <div class="footer-introduction__media3">
+              <i class="footer-introduction__social-icon3 bi bi-telegram"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function dieu_huong_timkiem() {
+        location.assign("http://127.0.0.1:5501/TimKiem/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_trangchu() {
+        location.assign("http://127.0.0.1:5501/HomePage/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_phimhot() {
+        location.assign("dieu_huong_phimhot()");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_phimle() {
+        location.assign("http://127.0.0.1:5501/PhimLe/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_phimbo() {
+        location.assign("http://127.0.0.1:5501/PhimBo/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_phimmoi() {
+        location.assign("http://127.0.0.1:5501/PhimMoi/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_FAQ() {
+        location.assign("http://127.0.0.1:5501/FAQ/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_taikhoan() {
+        location.assign("http://127.0.0.1:5501/Account/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_videoplayer() {
+        location.assign("http://127.0.0.1:5501/VideoPlayer/index.html");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6F42IVln_qTBTrFXhbgcX7nv2R5_vnlmVPgLBvYy8rgTIAeHGwH9AJyERmkTfPoZZkJU&usqp=CAU"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400&family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Red+Hat+Display:wght@300;400;500&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <title>Taikhoan Phimbro</title>
+  </head>
+  <body>
+    <div id="main">
+      <!-- Header -->
+      <div id="header">
+        <div class="header__navbar">
+          <ul class="header__navbar-list">
+            <li class="header__navbar-item">
+              <a href="http://127.0.0.1:5500/HomePage/index.html">
+                <img
+                  src="./assets/css/img/z4349514105704_103fdccde1d1bdddc5199562898f3a1a-removebg-preview.png"
+                  alt=""
+                  class="header__navbar-item-logo"
+                  onclick="dieu_huong_trangchu()"
+                />
+              </a>
+            </li>
+            <li class="header__navbar-item" onclick="dieu_huong_timkiem()">
+              <a href="http://127.0.0.1:5501/TimKiem/index.html">
+                <i class="bi bi-search"></i>
+                Tìm kiếm
+              </a>
+            </li>
+            <li class="header__navbar-item" onclick="dieu_huong_phimhot()">
+              <a href="http://127.0.0.1:5501/PhimHot/index.html">Phim Hot</a>
+            </li>
+            <li class="header__navbar-item" onclick="dieu_huong_phimle()">
+              <a href="http://127.0.0.1:5501/PhimLe/index.html">Phim Lẻ</a>
+            </li>
+            <li class="header__navbar-item" onclick="dieu_huong_phimbo()">
+              <a href="http://127.0.0.1:5501/PhimBo/index.html">Phim Bộ</a>
+            </li>
+            <li class="header__navbar-item" onclick="dieu_huong_phimmoi()">
+              <a href="http://127.0.0.1:5501/PhimMoi/index.html">Phim Mới</a>
+            </li>
+            <li class="header__navbar-item" onclick="dieu_huong_FAQ()">
+              <a href="http://127.0.0.1:5501/FAQ/index.html">FAQ</a>
+            </li>
+            <div class="header__navbar-name" onclick="dieu_huong_taikhoan()">
+              <p>Huy Hoàng</p>
+              <i class="header__navbar-name-icon bi bi-chevron-down"></i>
+            </div>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Body -->
+      <div id="body">
+        <div class="body-title">
+          <h1>Huy Hoàng</h1>
+          <p class="body-title__join">
+            Ngày gia nhập: <span> 18/05/2022 22:27</span>
+          </p>
+          <p class="body-title__email">
+            Email:
+            <span class="body-title__sub-email">tahoang2503@gmail.com</span> -
+            <span class="body-title__sub-change">Đổi email</span>
+          </p>
+          <p class="body-title__change-pass">Đổi mật khẩu</p>
+          <p class="body-title__code-present">Tạo mã giới thiệu</p>
+          <p class="body-title__cost">Số dư: <span>1.600 đ</span></p>
+          <p class="body-title__mode">
+            <input type="checkbox" / class="body-title__mode-checkbox"> Bật chế
+            độ kiểm duyệt phụ đề
+          </p>
+          <p class="body-title__other">
+            Những từ ngữ tục, chửi thề... trong phụ đề sẽ được thay bằng ký tự
+            lạ
+          </p>
+        </div>
+
+        <div class="body-btn">
+          <p class="body-btn__vip">Kích hoạt VIP Mode</p>
+        </div>
+        <div class="body-line"></div>
+        <div class="body-label">
+          <h2>Các phim đã kích hoạt VIP Mode</h2>
+          <p class="body-label__des">
+            Chú ý: chế độ VIP Mode có thời gian hiệu lực 10 ngày đối với phim.
+            Tức là sau khi bạn kích hoạt VIP Mode cho một phim nào đó, bạn có
+            thể xem chế độ VIP với phim đó trong vòng 10 ngày. Còn số dư trong
+            tài khoản bạn thì không có thời hạn sử dụng. Bạn muốn dùng lúc nào
+            cũng được. Chẳng hạn tài khoản bạn còn 5000đ, thì 10 năm sau quay
+            lại trang web bạn vẫn có thể dùng 5000đ đó để kích hoạt VIP Mode cho
+            phim.
+          </p>
+          <p class="body-label__movie-time" onclick="dieu_huong_videoplayer()">
+            <span>The Super Mario Bros. Movie</span> - 20:32 13/05/2023
+          </p>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div id="footer">
+        <div class="footer-introduction">
+          <h3>
+            Phim chất lượng cao online của <span>XemPhim</span> khác gì so với
+            các trang phim khác?
+          </h3>
+          <ul class="footer-introduction__list">
+            <li class="footer-introduction__item">
+              Là phim bluray (reencoded), có độ phân giải thấp nhất là Full HD
+              (1080p), trong khi hầu hết các trang phim khác chỉ có tới độ phân
+              giải HD (720p) là cao nhất
+            </li>
+            <li class="footer-introduction__item">
+              Chất lượng cao, lượng dữ liệu trên giây (bitrate) gấp từ 5 - 10
+              lần phim online thông thường - đây là yếu tố quyết định độ nét của
+              phim (thậm chí còn quan trọng hơn độ phân giải)
+            </li>
+            <li class="footer-introduction__item">
+              Âm thanh 5.1 (6 channel) thay vì stereo (2 channel) như các trang
+              phim khác (kể cả Youtube)
+            </li>
+            <li class="footer-introduction__item">
+              Phù hợp để xem trên màn hình TV, máy tính, laptop có độ phân giải
+              cao
+            </li>
+            <li class="footer-introduction__item">
+              Nếu không hài lòng với phụ đề có sẵn, bạn có thể tự upload phụ đề
+              của riêng mình để xem online
+            </li>
+            <li class="footer-introduction__item">
+              Có lựa chọn hiện phụ đề song ngữ (tức hiện đồng thời cả tiếng Anh
+              & tiếng Việt), phù hợp với những người muốn học tiếng Anh qua phụ
+              đề phim
+            </li>
+          </ul>
+
+          <div class="footer-introduction__social">
+            <div class="footer-introduction__media1">
+              <i class="footer-introduction__social-icon1 bi bi-envelope"></i>
+            </div>
+            <div class="footer-introduction__media2">
+              <i class="footer-introduction__social-icon2 bi bi-facebook"></i>
+            </div>
+            <div class="footer-introduction__media3">
+              <i class="footer-introduction__social-icon3 bi bi-telegram"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function dieu_huong_timkiem() {
+        location.assign("http://127.0.0.1:5501/TimKiem/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_trangchu() {
+        location.assign("http://127.0.0.1:5501/HomePage/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_phimhot() {
+        location.assign("dieu_huong_phimhot()");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_phimle() {
+        location.assign("http://127.0.0.1:5501/PhimLe/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_phimbo() {
+        location.assign("http://127.0.0.1:5501/PhimBo/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_phimmoi() {
+        location.assign("http://127.0.0.1:5501/PhimMoi/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_FAQ() {
+        location.assign("http://127.0.0.1:5501/FAQ/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_taikhoan() {
+        location.assign("http://127.0.0.1:5501/Account/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_videoplayer() {
+        location.assign("http://127.0.0.1:5501/VideoPlayer/index.html");
+      }
+    </script>
+  </body>
+</html>

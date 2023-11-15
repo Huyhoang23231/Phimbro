@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6F42IVln_qTBTrFXhbgcX7nv2R5_vnlmVPgLBvYy8rgTIAeHGwH9AJyERmkTfPoZZkJU&usqp=CAU"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400&family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Red+Hat+Display:wght@300;400;500&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <title>VideoPlayer Phimbro</title>
+  </head>
+  <body>
+    <div id="main">
+      <!-- Header -->
+      <div id="header">
+        <div class="header__navbar">
+          <ul class="header__navbar-list">
+            <li class="header__navbar-item">
+              <a href="http://127.0.0.1:5501/HomePage/index.html">
+                <img
+                  src="./assets/css/img/z4349514105704_103fdccde1d1bdddc5199562898f3a1a-removebg-preview.png"
+                  alt=""
+                  class="header__navbar-item-logo"
+                  onclick="dieu_huong_trangchu()"
+                />
+              </a>
+            </li>
+            <li class="header__navbar-item" onclick="dieu_huong_timkiem()">
+              <a href="http://127.0.0.1:5501/TimKiem/index.html">
+                <i class="bi bi-search"></i>
+                Tìm kiếm
+              </a>
+            </li>
+            <li class="header__navbar-item" onclick="dieu_huong_phimhot()">
+              <a href="http://127.0.0.1:5501/PhimHot/index.html">Phim Hot</a>
+            </li>
+            <li class="header__navbar-item" onclick="dieu_huong_phimle()">
+              <a href="http://127.0.0.1:5501/PhimLe/index.html">Phim Lẻ</a>
+            </li>
+            <li class="header__navbar-item" onclick="dieu_huong_phimbo()">
+              <a href="http://127.0.0.1:5501/PhimBo/index.html">Phim Bộ</a>
+            </li>
+            <li class="header__navbar-item" onclick="dieu_huong_phimmoi()">
+              <a href="http://127.0.0.1:5501/PhimMoi/index.html">Phim Mới</a>
+            </li>
+            <li class="header__navbar-item" onclick="dieu_huong_FAQ()">
+              <a href="http://127.0.0.1:5501/FAQ/index.html">FAQ</a>
+            </li>
+            <div class="header__navbar-name" onclick="dieu_huong_taikhoan()">
+              <p>Huy Hoàng</p>
+              <i class="header__navbar-name-icon bi bi-chevron-down"></i>
+            </div>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Body -->
+      <div id="body">
+        <div class="body__movie-player">
+          <video
+            class="body__movie-layout"
+            controls
+            src="./assets/css/video/phim Chiếu Rạp Cực Đỉnh 2023 - Review phim The Super Mario Bros.mp4"
+          ></video>
+        </div>
+
+        <ul class="body__movie-server">
+          <li class="body__movie-server-item body__movie-server1">
+            <a href="">Server 1</a>
+          </li>
+          <li class="body__movie-server-item body__movie-server2">
+            <i class="body__movie-server-icon bi bi-check"></i>
+            <a href="">Server 2</a>
+          </li>
+          <li class="body__movie-server-item body__movie-server3">
+            <a href="">Server 3</a>
+          </li>
+          <li class="body__movie-server-item body__movie-server4">
+            <a href="">Server 4</a>
+          </li>
+          <li class="body__movie-server-item body__movie-server-vpn">
+            <a href="">Web VPN</a>
+          </li>
+        </ul>
+
+        <div class="body__movie-server-guide">
+          <div class="body__movie-server-des1">
+            <p>
+              Đã chọn cả 4 server mà phim vẫn load chậm?
+              <span onclick="dieu_huong_FAQ()">Xem hướng dẫn</span>
+            </p>
+          </div>
+
+          <div class="body__movie-server-des2">
+            <p>
+              Phim không có tiếng / mất tiếng nhân vật / âm thanh bị rè?
+              <span onclick="dieu_huong_FAQ()">Xem hướng dẫn</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="body__movie-title">
+          <h2>Phim anh em Super Mario</h2>
+          <div class="body__movie-btn">
+            <h3>Tab Song Ngữ</h3>
+          </div>
+        </div>
+
+        <div class="body__movie-sub-title">
+          <h2>The Super Mario Bros. Movie (<span>2023</span>)</h2>
+          <div class="body__movie-link" onclick="dieu_huong_chitietphim()">
+            <i class="body__movie-sub-title-icon bi bi-arrow-return-left"></i>
+            <h3>Về trang giới thiệu phim</h3>
+          </div>
+        </div>
+
+        <div class="body__movie-social">
+          <div class="body__movie-social-list">
+            <div class="body__movie-social-item body__movie-social-face">
+              <i class="body__movie-social-icon bi bi-facebook"></i>
+              <a href="">Chia sẻ</a>
+            </div>
+            <div class="body__movie-social-item body__movie-social-add">
+              <i class="body__movie-social-icon bi bi-plus"></i>
+              <a href="">
+                <span>Bộ sưu tập</span>
+              </a>
+            </div>
+            <div class="body__movie-social-item body__movie-social-similar">
+              <i class="body__movie-social-icon bi bi-film"></i>
+              <a href="">
+                <span1>Phim tương tự</span1>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="body__movie-sub">
+          <p>
+            Dưới đây là các phụ đề của phim này được hệ thống lấy tự động từ
+            subscene.com. Nếu chọn được một phụ đề vừa ý (khớp thời gian & dịch
+            chuẩn), hãy <i class="bi bi-hand-thumbs-up"></i> phụ đề đó để lần
+            sau xem lại <br />phim, hệ thống sẽ tự động sử dụng phụ đề đó cho
+            bạn!<br />
+          </p>
+        </div>
+
+        <div class="body__movie-sub-add1">
+          <p>
+            Bạn cũng có thể upload file phụ đề của riêng bạn =>
+            <span>Click vào đây!</span>
+          </p>
+        </div>
+        <div class="body__movie-sub-add2">
+          <span>Tìm phụ đề cho phim này trên Subscene</span>
+        </div>
+
+        <!-- Select SubTitle -->
+        <div class="body__movie-option">
+          <div class="body__movie-option-eng">
+            <div class="body__movie-title">
+              <h3>Tiếng Anh</h3>
+            </div>
+
+            <div class="body__moive-option-eng-card">
+              <ul class="body__movie-option-eng-list">
+                <li class="body__movie-option-eng-item">
+                  <i
+                    class="body__movie-option-eng-list-icon bi bi-badge-cc"
+                  ></i>
+                  <p class="body__movie-option-eng-item-des">unknown release</p>
+                </li>
+              </ul>
+
+              <div class="body__movie-option-eng-select">
+                <i
+                  class="body__movie-option-eng-select-icon bi bi-check-square-fill"
+                ></i>
+                <div class="body__movie-option-eng-like">
+                  <span>5</span>
+                  <i
+                    class="body__movie-option-eng-like-icon bi bi-hand-thumbs-up"
+                  ></i>
+                </div>
+
+                <div class="body__movie-option-eng-dislike">
+                  <span>0</span>
+                  <i
+                    class="body__movie-option-eng-dislike-icon bi bi-hand-thumbs-down"
+                  ></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="body__moive-option-eng-card2">
+              <ul class="body__movie-option-eng-list2">
+                <li class="body__movie-option-eng-item2">
+                  <i
+                    class="body__movie-option-eng-list-icon2 bi bi-badge-cc"
+                  ></i>
+                  <p class="body__movie-option-eng-item-des2">
+                    <span
+                      >--&gt;TRAILER&lt;-- The Super Mario Bros. Movie Official
+                      Trailer</span
+                    >
+                    <br />- makoto77<br />
+                  </p>
+                </li>
+              </ul>
+
+              <div class="body__movie-option-eng-select2">
+                <div class="body__movie-option-eng-select2-btn">Chọn</div>
+
+                <div class="body__movie-option-eng-like2">
+                  <span>0</span>
+                  <i
+                    class="body__movie-option-eng-like-icon2 bi bi-hand-thumbs-up"
+                  ></i>
+                </div>
+
+                <div class="body__movie-option-eng-dislike2">
+                  <span>0</span>
+                  <i
+                    class="body__movie-option-eng-dislike-icon2 bi bi-hand-thumbs-down"
+                  ></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="body__moive-option-eng-card3">
+              <ul class="body__movie-option-eng-list3">
+                <li class="body__movie-option-eng-item3">
+                  <i
+                    class="body__movie-option-eng-list-icon3 bi bi-badge-cc"
+                  ></i>
+                  <p class="body__movie-option-eng-item-des3">
+                    <span>Cam.X264.Will1869</span>
+                    <br />- arminebr<br />
+                  </p>
+                </li>
+              </ul>
+
+              <div class="body__movie-option-eng-select3">
+                <div class="body__movie-option-eng-select3-btn">Chọn</div>
+
+                <div class="body__movie-option-eng-like3">
+                  <span>0</span>
+                  <i
+                    class="body__movie-option-eng-like-icon3 bi bi-hand-thumbs-up"
+                  ></i>
+                </div>
+
+                <div class="body__movie-option-eng-dislike3">
+                  <span>0</span>
+                  <i
+                    class="body__movie-option-eng-dislike-icon3 bi bi-hand-thumbs-down"
+                  ></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="body__moive-option-eng-card4">
+              <ul class="body__movie-option-eng-list4">
+                <li class="body__movie-option-eng-item4">
+                  <i
+                    class="body__movie-option-eng-list-icon4 bi bi-badge-cc"
+                  ></i>
+                  <p class="body__movie-option-eng-item-des4">
+                    <span>HDCAM.English.1XBET</span>
+                    <br />- arminebr<br />
+                  </p>
+                </li>
+              </ul>
+
+              <div class="body__movie-option-eng-select4">
+                <div class="body__movie-option-eng-select4-btn">Chọn</div>
+
+                <div class="body__movie-option-eng-like4">
+                  <span>0</span>
+                  <i
+                    class="body__movie-option-eng-like-icon4 bi bi-hand-thumbs-up"
+                  ></i>
+                </div>
+
+                <div class="body__movie-option-eng-dislike4">
+                  <span>0</span>
+                  <i
+                    class="body__movie-option-eng-dislike-icon4 bi bi-hand-thumbs-down"
+                  ></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="body__moive-option-eng-card5">
+              <ul class="body__movie-option-eng-list5">
+                <li class="body__movie-option-eng-item5">
+                  <i
+                    class="body__movie-option-eng-list-icon5 bi bi-badge-cc"
+                  ></i>
+                  <p class="body__movie-option-eng-item-des5">
+                    <span>Clean.Cam.X264.Will1864</span>
+                    <br />- arminebr<br />
+                  </p>
+                </li>
+              </ul>
+
+              <div class="body__movie-option-eng-select5">
+                <div class="body__movie-option-eng-select5-btn">Chọn</div>
+
+                <div class="body__movie-option-eng-like5">
+                  <span>0</span>
+                  <i
+                    class="body__movie-option-eng-like-icon5 bi bi-hand-thumbs-up"
+                  ></i>
+                </div>
+
+                <div class="body__movie-option-eng-dislike5">
+                  <span>0</span>
+                  <i
+                    class="body__movie-option-eng-dislike-icon5 bi bi-hand-thumbs-down"
+                  ></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="body__moive-option-eng-card6">
+              <ul class="body__movie-option-eng-list6">
+                <li class="body__movie-option-eng-item6">
+                  <i class="body__movie-option-eng-list-icon6 bi bi-folder"></i>
+                  <p class="body__movie-option-eng-item-des6">
+                    <span
+                      >The.Super.Mario.Bros.Movie.2023.WEBRip.x264-ION10,
+                      The.Super.Mario.Bros.Movie...</span
+                    >
+                    <br />- Coffee_Prison<br />
+                  </p>
+                </li>
+              </ul>
+
+              <div class="body__movie-option-eng-select6">
+                <div class="body__movie-option-eng-select6-btn">
+                  Mở
+                  <i
+                    class="body__movie-option-eng-select6-btn-icon bi bi-chevron-double-down"
+                  ></i>
+                </div>
+
+                <div class="body__movie-option-eng-like6">
+                  <span>0</span>
+                  <i
+                    class="body__movie-option-eng-like-icon6 bi bi-hand-thumbs-up"
+                  ></i>
+                </div>
+
+                <div class="body__movie-option-eng-dislike6">
+                  <span>0</span>
+                  <i
+                    class="body__movie-option-eng-dislike-icon6 bi bi-hand-thumbs-down"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="body__movie-option-vn">
+            <div class="body__movie-title">
+              <h3>Tiếng Việt</h3>
+            </div>
+
+            <div class="body__moive-option-vn-card">
+              <ul class="body__movie-option-vn-list">
+                <li class="body__movie-option-vn-item">
+                  <i class="body__movie-option-vn-list-icon bi bi-badge-cc"></i>
+                  <p class="body__movie-option-vn-item-des">
+                    <span>HDTS.x264.Dual.YG</span> <br />- KenhCuaDaoLeMinh<br />
+                  </p>
+                </li>
+              </ul>
+
+              <div class="body__movie-option-vn-select">
+                <i
+                  class="body__movie-option-vn-select-icon bi bi-check-square-fill"
+                ></i>
+                <div class="body__movie-option-vn-like">
+                  <span>9</span>
+                  <i
+                    class="body__movie-option-vn-like-icon bi bi-hand-thumbs-up"
+                  ></i>
+                </div>
+
+                <div class="body__movie-option-vn-dislike">
+                  <span>1</span>
+                  <i
+                    class="body__movie-option-vn-dislike-icon bi bi-hand-thumbs-down"
+                  ></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="body__moive-option-vn-card2">
+              <ul class="body__movie-option-vn-list2">
+                <li class="body__movie-option-vn-item2">
+                  <i
+                    class="body__movie-option-vn-list-icon2 bi bi-badge-cc"
+                  ></i>
+                  <p class="body__movie-option-vn-item-des2">
+                    <span
+                      >WEBRip.x264-RARBG, WEB.H264-SLOT,
+                      MA.WEB-DL.DDP5.1.Atmos.DV.MP4.x265-DVSUX...</span
+                    >
+                    <br />- KenhCuaDaoLeMinh<br />
+                  </p>
+                </li>
+              </ul>
+
+              <div class="body__movie-option-vn-select2">
+                <div class="body__movie-option-vn-select2-btn">Chọn</div>
+
+                <div class="body__movie-option-vn-like2">
+                  <span>0</span>
+                  <i
+                    class="body__movie-option-vn-like-icon2 bi bi-hand-thumbs-up"
+                  ></i>
+                </div>
+
+                <div class="body__movie-option-vn-dislike2">
+                  <span>0</span>
+                  <i
+                    class="body__movie-option-vn-dislike-icon2 bi bi-hand-thumbs-down"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="body__movie-comment">
+          <div class="body__movie-comment-title">
+            <h2>
+              <i class="body__movie-comment-title-icon bi bi-chat"></i>
+              Bình luận phim
+            </h2>
+          </div>
+
+          <div class="body__movie-comment-fill">
+            <input
+              class="body__movie-comment-fill-text"
+              type="text"
+              placeholder="Nhập bình luận..."
+            />
+          </div>
+        </div>
+        <div class="body__movie-send">
+          <div class="body__movie-send-btn">Gửi</div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div id="footer">
+        <div class="footer-introduction">
+          <h3>
+            Phim chất lượng cao online của <span>XemPhim</span> khác gì so với
+            các trang phim khác?
+          </h3>
+          <ul class="footer-introduction__list">
+            <li class="footer-introduction__item">
+              Là phim bluray (reencoded), có độ phân giải thấp nhất là Full HD
+              (1080p), trong khi hầu hết các trang phim khác chỉ có tới độ phân
+              giải HD (720p) là cao nhất
+            </li>
+            <li class="footer-introduction__item">
+              Chất lượng cao, lượng dữ liệu trên giây (bitrate) gấp từ 5 - 10
+              lần phim online thông thường - đây là yếu tố quyết định độ nét của
+              phim (thậm chí còn quan trọng hơn độ phân giải)
+            </li>
+            <li class="footer-introduction__item">
+              Âm thanh 5.1 (6 channel) thay vì stereo (2 channel) như các trang
+              phim khác (kể cả Youtube)
+            </li>
+            <li class="footer-introduction__item">
+              Phù hợp để xem trên màn hình TV, máy tính, laptop có độ phân giải
+              cao
+            </li>
+            <li class="footer-introduction__item">
+              Nếu không hài lòng với phụ đề có sẵn, bạn có thể tự upload phụ đề
+              của riêng mình để xem online
+            </li>
+            <li class="footer-introduction__item">
+              Có lựa chọn hiện phụ đề song ngữ (tức hiện đồng thời cả tiếng Anh
+              & tiếng Việt), phù hợp với những người muốn học tiếng Anh qua phụ
+              đề phim
+            </li>
+          </ul>
+
+          <div class="footer-introduction__social">
+            <div class="footer-introduction__media1">
+              <i class="footer-introduction__social-icon1 bi bi-envelope"></i>
+            </div>
+            <div class="footer-introduction__media2">
+              <i class="footer-introduction__social-icon2 bi bi-facebook"></i>
+            </div>
+            <div class="footer-introduction__media3">
+              <i class="footer-introduction__social-icon3 bi bi-telegram"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function dieu_huong_timkiem() {
+        location.assign("http://127.0.0.1:5501/TimKiem/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_trangchu() {
+        location.assign("http://127.0.0.1:5501/HomePage/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_phimhot() {
+        location.assign("dieu_huong_phimhot()");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_phimle() {
+        location.assign("http://127.0.0.1:5501/PhimLe/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_phimbo() {
+        location.assign("http://127.0.0.1:5501/PhimBo/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_phimmoi() {
+        location.assign("http://127.0.0.1:5501/PhimMoi/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_FAQ() {
+        location.assign("http://127.0.0.1:5501/FAQ/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_taikhoan() {
+        location.assign("http://127.0.0.1:5501/Account/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_chitietphim() {
+        location.assign("http://127.0.0.1:5501/MovideDetail/index.html");
+      }
+    </script>
+  </body>
+</html>

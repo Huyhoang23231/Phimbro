@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6F42IVln_qTBTrFXhbgcX7nv2R5_vnlmVPgLBvYy8rgTIAeHGwH9AJyERmkTfPoZZkJU&usqp=CAU"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400&family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Red+Hat+Display:wght@300;400;500&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <title>PhimHot Phimbro</title>
+  </head>
+  <body>
+    <div id="main">
+      <!-- Header -->
+      <div id="header">
+        <div class="header__navbar">
+          <ul class="header__navbar-list">
+            <li class="header__navbar-item">
+              <a href="http://127.0.0.1:5501/HomePage/index.html">
+                <img
+                  src="./assets/css/img/z4349514105704_103fdccde1d1bdddc5199562898f3a1a-removebg-preview.png"
+                  alt=""
+                  class="header__navbar-item-logo"
+                  onclick="dieu_huong_trangchu()"
+                />
+              </a>
+            </li>
+            <li class="header__navbar-item">
+              <a href="http://127.0.0.1:5501/TimKiem/index.html">
+                <i class="bi bi-search" onclick="dieu_huong_timkiem()"></i>
+                Tìm kiếm
+              </a>
+            </li>
+            <li class="header__navbar-item" onclick="dieu_huong_phimhot()">
+              <a href="http://127.0.0.1:5501/PhimHot/index.html">Phim Hot</a>
+            </li>
+            <li class="header__navbar-item" onclick="dieu_huong_phimle()">
+              <a href="http://127.0.0.1:5501/PhimLe/index.html">Phim Lẻ</a>
+            </li>
+            <li class="header__navbar-item" onclick="dieu_huong_phimbo()">
+              <a href="http://127.0.0.1:5501/PhimBo/index.html">Phim Bộ</a>
+            </li>
+            <li class="header__navbar-item" onclick="dieu_huong_phimmoi()">
+              <a href="http://127.0.0.1:5501/PhimMoi/index.html">Phim Mới</a>
+            </li>
+            <li class="header__navbar-item" onclick="dieu_huong_FAQ()">
+              <a href="http://127.0.0.1:5501/FAQ/index.html">FAQ</a>
+            </li>
+            <div class="header__navbar-name" onclick="dieu_huong_taikhoan()">
+              <p>Huy Hoàng</p>
+              <i class="header__navbar-name-icon bi bi-chevron-down"></i>
+            </div>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Body -->
+      <div id="body">
+        <div class="body-movie__label">
+          <h1>Top phim được xem nhiều nhất</h1>
+        </div>
+
+        <div class="body-movies__date">
+          <div class="body-movies__date-item">
+            <p>NGÀY</p>
+            <!-- <div class="body-movies__date-item-line"></div> -->
+          </div>
+          <div class="body-movies__date-item">
+            <p>TUẦN</p>
+            <!-- <div class="body-movies__date-item-line"></div> -->
+          </div>
+          <div class="body-movies__date-item">
+            <p>THÁNG</p>
+            <!-- <div class="body-movies__date-item-line"></div> -->
+          </div>
+        </div>
+
+        <!-- List phim 1 -->
+        <div class="body__movie-list1">
+          <div class="body__movie-poster1">
+            <img
+              src="./assets/css/img/s7kgXVNKQDtBRUUfQa5ELwxOpg9.jpg"
+              alt=""
+              class="body__movie-picture1"
+            />
+
+            <div class="body__movie-poster-label1">
+              <h3>Khế ước</h3>
+              <p>Guy Richie's The Convenant</p>
+            </div>
+          </div>
+
+          <div class="body__movie-poster1">
+            <img
+              src="./assets/css/img/sq3Ntm8Y2ozLg4oHQnNfRZ9vYdW.jpg"
+              alt=""
+              class="body__movie-picture1"
+            />
+
+            <div class="body__movie-poster-label1">
+              <h3>Ngục tối và Rồng: Danh dự của...</h3>
+              <p>Dungeons & Dragons: Honor A...</p>
+            </div>
+          </div>
+
+          <div class="body__movie-poster1">
+            <img
+              src="./assets/css/img/tn4vf3DDQuP96VQ9PQR1xEXrXqH.jpg"
+              alt=""
+              class="body__movie-picture1"
+            />
+
+            <div class="body__movie-poster-label1">
+              <h3>Tay sai của Qủy</h3>
+              <p>Renfield</p>
+            </div>
+          </div>
+
+          <div class="body__movie-poster1">
+            <img
+              src="./assets/css/img/vnRthEZz16Q9VWcP5homkHxyHoy.jpg"
+              alt=""
+              class="body__movie-picture1"
+            />
+
+            <div class="body__movie-poster-label1">
+              <h3>Ma cây trỗi dậy</h3>
+              <p>Evil Dead Rise</p>
+            </div>
+          </div>
+
+          <div class="body__movie-poster1">
+            <img
+              src="./assets/css/img/vUHlpA5c1NXkds59reY3HMb4Abs.jpg"
+              alt=""
+              class="body__movie-picture1"
+            />
+
+            <div class="body__movie-poster-label1">
+              <h3>Phim anh em Super Mario</h3>
+              <p>The Super Mario Bros. Movie</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- List phim 2 -->
+        <div class="body__movie-list2">
+          <div class="body__movie-poster2">
+            <img
+              src="https://image.tmdb.org/t/p/w342/r7vmZjiyZw9rpJMQJdXpjgiCOk9.jpg"
+              alt=""
+              class="body__movie-picture2"
+            />
+
+            <div class="body__movie-poster-label2">
+              <h3>Vệ binh dải ngân hà</h3>
+              <p>Guardians of the Galaxy</p>
+            </div>
+          </div>
+
+          <div class="body__movie-poster2">
+            <img
+              src="https://image.tmdb.org/t/p/w342/y4MBh0EjBlMuOzv9axM4qJlmhzz.jpg"
+              alt=""
+              class="body__movie-picture2"
+            />
+
+            <div class="body__movie-poster-label2">
+              <h3>Vệ binh dải ngân hà 2</h3>
+              <p>Guardians of the Galaxy Vol. 2</p>
+            </div>
+          </div>
+
+          <div class="body__movie-poster2">
+            <img
+              src="https://image.tmdb.org/t/p/w342/fF7vSzea99gdOnlBEwq82jP3ca5.jpg"
+              alt=""
+              class="body__movie-picture2"
+            />
+
+            <div class="body__movie-poster-label2">
+              <h3>Hiệp sĩ áo đen</h3>
+              <p>Black Knight</p>
+            </div>
+          </div>
+
+          <div class="body__movie-poster2">
+            <img
+              src="https://image.tmdb.org/t/p/w342/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg"
+              alt=""
+              class="body__movie-picture2"
+            />
+
+            <div class="body__movie-poster-label2">
+              <h3>Avatar: Dòng chảy của nước</h3>
+              <p>Avatar: The Way of Water</p>
+            </div>
+          </div>
+
+          <div class="body__movie-poster2">
+            <img
+              src="https://image.tmdb.org/t/p/w342/pR858ihc6Ls9xohpdRJVjV787ml.jpg"
+              alt=""
+              class="body__movie-picture2"
+            />
+
+            <div class="body__movie-poster-label2">
+              <h3>Lưu Lạc Địa Cầu 2</h3>
+              <p>The Wandering Earth II</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- List phim 3 -->
+        <div class="body__movie-list3">
+          <div class="body__movie-poster3">
+            <img
+              src="https://image.tmdb.org/t/p/w342/dHx5yuBb05U9vNaNhIBD7jWyxPk.jpg"
+              alt=""
+              class="body__movie-picture3"
+            />
+
+            <div class="body__movie-poster-label3">
+              <h3>Già gân báo thù</h3>
+              <p>Sisu</p>
+            </div>
+          </div>
+
+          <div class="body__movie-poster3">
+            <img
+              src="https://image.tmdb.org/t/p/w342/76AKQPdH3M8cvsFR9K8JsOzVlY5.jpg"
+              alt=""
+              class="body__movie-picture3"
+            />
+
+            <div class="body__movie-poster-label3">
+              <h3>Bạn Trai Tôi Là Hồ Ly 2</h3>
+              <p>Tale of the Nine Tailed 1938</p>
+            </div>
+          </div>
+
+          <div class="body__movie-poster3">
+            <img
+              src="https://image.tmdb.org/t/p/w342/hwntWLbs4SQqoHmF3pdod4VRCIx.jpg"
+              alt=""
+              class="body__movie-picture3"
+            />
+
+            <div class="body__movie-poster-label3">
+              <h3>Hố đen tử thần (Thám hiểm liên hà...</h3>
+              <p>Interstellar</p>
+            </div>
+          </div>
+
+          <div class="body__movie-poster3">
+            <img
+              src="https://image.tmdb.org/t/p/w342/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg"
+              alt=""
+              class="body__movie-picture3"
+            />
+
+            <div class="body__movie-poster-label3">
+              <h3>Hố đen tử thần (Thám hiểm liên hà...</h3>
+              <p>Interstellar</p>
+            </div>
+          </div>
+
+          <div class="body__movie-poster3">
+            <img
+              src="https://image.tmdb.org/t/p/w342/8dqXyslZ2hv49Oiob9UjlGSHSTR.jpg"
+              alt=""
+              class="body__movie-picture3"
+            />
+
+            <div class="body__movie-poster-label3">
+              <h3>Vệ Binh Dải Ngân Hà: Tập đặc biệt...</h3>
+              <p>The Guardians of the Galaxy Holid...</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- List phim 4 -->
+        <div class="body__movie-list4">
+          <div class="body__movie-poster4">
+            <img
+              src="https://image.tmdb.org/t/p/w342/pnrv8tfOcWxu4CrB8N7xK0jYJsR.jpg"
+              alt=""
+              class="body__movie-picture4"
+            />
+
+            <div class="body__movie-poster-label4">
+              <h3>Hồi Chuông Lạ</h3>
+              <p>From</p>
+            </div>
+          </div>
+
+          <div class="body__movie-poster4">
+            <img
+              src="https://image.tmdb.org/t/p/w342/7yyFEsuaLGTPul5UkHc5BhXnQ0k.jpg"
+              alt=""
+              class="body__movie-picture4"
+            />
+
+            <div class="body__movie-poster-label4">
+              <h3>Cái chết của bảy vị vua</h3>
+              <p>The Last Kingdom: Seven Kings M...</p>
+            </div>
+          </div>
+
+          <div class="body__movie-poster4">
+            <img
+              src="https://image.tmdb.org/t/p/w342/or06FN3Dka5tukK1e9sl16pB3iy.jpg"
+              alt=""
+              class="body__movie-picture4"
+            />
+
+            <div class="body__movie-poster-label4">
+              <h3>Biệt Đội Siêu Anh Hùng 4: Hồi Kết</h3>
+              <p>Avengers: Endgame</p>
+            </div>
+          </div>
+
+          <div class="body__movie-poster4">
+            <img
+              src="https://image.tmdb.org/t/p/w342/2VK4d3mqqTc7LVZLnLPeRiPaJ71.jpg"
+              alt=""
+              class="body__movie-picture4"
+            />
+
+            <div class="body__movie-poster-label4">
+              <h3>Shazam! Cơn thịnh nộ của các vị...</h3>
+              <p>Shazam! Fury of the Gods</p>
+            </div>
+          </div>
+
+          <div class="body__movie-poster4">
+            <img
+              src="https://image.tmdb.org/t/p/w342/qnqGbB22YJ7dSs4o6M7exTpNxPz.jpg"
+              alt=""
+              class="body__movie-picture4"
+            />
+
+            <div class="body__movie-poster-label4">
+              <h3>Người Kiến và Chiến binh Ong: T...</h3>
+              <p>Ant-Man and the Wasp: Quantum...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div id="footer">
+        <div class="footer-introduction">
+          <h3>
+            Phim chất lượng cao online của <span>XemPhim</span> khác gì so với
+            các trang phim khác?
+          </h3>
+          <ul class="footer-introduction__list">
+            <li class="footer-introduction__item">
+              Là phim bluray (reencoded), có độ phân giải thấp nhất là Full HD
+              (1080p), trong khi hầu hết các trang phim khác chỉ có tới độ phân
+              giải HD (720p) là cao nhất
+            </li>
+            <li class="footer-introduction__item">
+              Chất lượng cao, lượng dữ liệu trên giây (bitrate) gấp từ 5 - 10
+              lần phim online thông thường - đây là yếu tố quyết định độ nét của
+              phim (thậm chí còn quan trọng hơn độ phân giải)
+            </li>
+            <li class="footer-introduction__item">
+              Âm thanh 5.1 (6 channel) thay vì stereo (2 channel) như các trang
+              phim khác (kể cả Youtube)
+            </li>
+            <li class="footer-introduction__item">
+              Phù hợp để xem trên màn hình TV, máy tính, laptop có độ phân giải
+              cao
+            </li>
+            <li class="footer-introduction__item">
+              Nếu không hài lòng với phụ đề có sẵn, bạn có thể tự upload phụ đề
+              của riêng mình để xem online
+            </li>
+            <li class="footer-introduction__item">
+              Có lựa chọn hiện phụ đề song ngữ (tức hiện đồng thời cả tiếng Anh
+              & tiếng Việt), phù hợp với những người muốn học tiếng Anh qua phụ
+              đề phim
+            </li>
+          </ul>
+
+          <div class="footer-introduction__social">
+            <div class="footer-introduction__media1">
+              <i class="footer-introduction__social-icon1 bi bi-envelope"></i>
+            </div>
+            <div class="footer-introduction__media2">
+              <i class="footer-introduction__social-icon2 bi bi-facebook"></i>
+            </div>
+            <div class="footer-introduction__media3">
+              <i class="footer-introduction__social-icon3 bi bi-telegram"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function dieu_huong_timkiem() {
+        location.assign("http://127.0.0.1:5501/TimKiem/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_trangchu() {
+        location.assign("http://127.0.0.1:5501/HomePage/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_phimhot() {
+        location.assign("dieu_huong_phimhot()");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_phimle() {
+        location.assign("http://127.0.0.1:5501/PhimLe/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_phimbo() {
+        location.assign("http://127.0.0.1:5501/PhimBo/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_phimmoi() {
+        location.assign("http://127.0.0.1:5501/PhimMoi/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_FAQ() {
+        location.assign("http://127.0.0.1:5501/FAQ/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_taikhoan() {
+        location.assign("http://127.0.0.1:5501/Account/index.html");
+      }
+    </script>
+  </body>
+</html>
